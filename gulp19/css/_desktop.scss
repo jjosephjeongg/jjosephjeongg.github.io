@@ -1,0 +1,63 @@
+@media (min-width: 1200px) {
+
+    nav {
+      ul {
+        display: flex;
+      }
+  
+      .logo {
+        flex-basis: 50%;
+        margin-right: 14rem;
+  
+        a {
+          float: left;
+        }
+      }
+  
+      .menu {
+        a {
+          margin-top: 2rem;
+        }
+      }
+    }
+  
+    .about {
+      .main {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+      }
+  
+      .image {
+        content: url(../media/images/gulp-pouring-coffee-horizontal.jpg);
+        flex-basis: 50%;
+        margin-top: 6rem;
+      }
+  
+      .main-bkgd {
+        padding-bottom: 200px;
+      }
+    }
+  
+    .contact {
+      .main {
+        display: flex;
+        justify-content: space-between;
+      }
+  
+      .image {
+        @include dimension(450px, 350px);
+      }
+    }
+  
+    .product {
+      .gr-products {
+        max-width: 1200px;
+  
+        .item {
+          max-width: 1200px;
+        }
+      }
+    }
+  
+  }

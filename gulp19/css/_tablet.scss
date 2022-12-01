@@ -1,0 +1,82 @@
+@media (min-width: 768px) {
+    nav {
+      ul {
+        display: flex;
+      }
+  
+      a {
+        @include spacing(0 0 10px 0, .75rem);
+      }
+    }
+  
+    .about {
+      .main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        @include spacing(auto, 0);
+      }
+  
+      article {
+        flex-basis: 70%;
+        padding: 2rem;
+      }
+  
+      .image {
+        content: url(../media/images/gulp-pouring-coffee-vertical.jpg);
+        @include dimension(250px, 350px);
+        @include spacing(9rem 1rem 8rem 0rem, auto);
+        border-radius: $corners;
+      }
+    }
+  
+    .contact {
+      .image {
+        content: url(../media/images/gulp-menu.jpg);
+        @include dimension(350px, 250px);
+        @include spacing(3rem 1rem 8rem 0rem, auto);
+        border-radius: $corners;
+      }
+  
+      .main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin: auto;
+      }
+  
+      article {
+        flex-basis: 40%;
+      }
+  
+      .main-bkgd {
+        padding-bottom: 150px;
+      }
+    }
+  
+    .product {
+      .gr-products {
+        max-width: 750px;
+  
+        .item {
+          max-width: 750px;
+          /*border: 4px solid red;*/
+          padding: 20px;
+          overflow: hidden;
+  
+          img {
+            @include dimension(300px, 275px);
+            margin-right: 15px;
+            float: left;
+          }
+  
+          h2,
+          p {
+            margin-left: 15px;
+            display: block;
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+  }

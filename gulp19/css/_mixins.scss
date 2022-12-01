@@ -1,0 +1,10 @@
+//mixins
+@mixin spacing($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+  }
+  
+  @mixin dimension($width, $height) {
+    width: $width;
+    height: $height;
+  }
